@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube Assault 3D</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="overlay" class="overlay visible">
+      <div class="panel">
+        <h1>Cube Assault 3D</h1>
+        <p>Move: WASD</p>
+        <p>Aim: Mouse</p>
+        <p>Shoot: Left Click</p>
+        <p>Restart: R</p>
+        <button id="startButton">Start Game</button>
+      </div>
+    </div>
+
+    <div id="hud" class="hud">
+      <div class="stat"><span>HP</span><strong id="healthText">100</strong></div>
+      <div class="stat"><span>SCORE</span><strong id="scoreText">0</strong></div>
+      <div class="stat"><span>WAVE</span><strong id="waveText">1</strong></div>
+      <div class="stat"><span>ENEMIES</span><strong id="enemyText">0</strong></div>
+    </div>
+
+    <div id="crosshair" aria-hidden="true"></div>
+
+    <div id="gameOver" class="game-over hidden">
+      <div class="panel small">
+        <h2>Game Over</h2>
+        <p id="finalScoreText">Score: 0</p>
+        <button id="restartButton">Restart</button>
+      </div>
+    </div>
+
+    <script type="module" src="./game.js"></script>
+  </body>
+</html>
